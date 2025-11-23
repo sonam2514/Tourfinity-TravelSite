@@ -1,0 +1,100 @@
+/* src/styles/pages/home.css */
+.home-page {
+    position: relative;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 8%;
+    width: 100%;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fffbfb;
+    font-weight: 700;
+  }
+  
+  .hero-text p {
+    max-width: 400px;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: #fffdfd;
+    font-size: 1.1rem;
+  }
+  
+  .btnn {
+    padding: 0.8rem 1.5rem;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
+  }
+  
+  .btnn:hover {
+    background: #fff ;
+    color: #2563eb;
+    transform: translateY(-2px);
+  }
+  
+  /* Booking Section */
+  .booking-section {
+    background: #fff;
+    color: #111;
+    padding: 4rem 8%;
+    position: relative;
+    z-index: 2;
+    min-height: 80vh;
+  }
+  
+  .booking-intro h2 {
+    color: #2563eb;
+    font-size: 2.5rem;
+    /* margin-top: 5rem; */
+  margin-bottom: 1.5rem;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .booking-intro p {
+    text-align: center;
+    color: #666;
+  margin: 0 auto 1.5rem; 
+    font-size: 1.1rem;
+  }
